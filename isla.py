@@ -40,7 +40,6 @@ non_op_count = non_op_critical.groupby('municipality').size().to_dict()
 st.write(f"- **Total Population Served:** {total_pop:,}")
 st.write(f"- **Average Delivery Delay:** {avg_delay:.2f} hours")
 st.write(f"- **Deliveries with < 80% Fulfillment:** {low_fulfillment_pct:.1f}%")
-st.write(f"- **Non-Operational Critical Facilities:** {non_op_count if non_op_count else 'None in selection'}")
 
 tab1, tab2 = st.tabs(["Infrastructure Status", "Relief Performance"])
 
